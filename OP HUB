@@ -38,7 +38,74 @@ local Tab = Window:NewTab("Credits")
 local Section = Tab:NewSection("Credits To TheLightIsNearBlind On Roblox")
 local Tab = Window:NewTab("Old GUI")
 local Section = Tab:NewSection("Old GUI")
-Section:NewButton("Old GUI", "Pops Up The Old GUI", function()
-    -- Made by TheLightIsNearBlind On Roblox. Enjoy!
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Weilder/Weilder-s-Hub/main/OP%20HUB"))();
+Section:NewButton("Old GUI", "Pops Up The Original GUI", function()
+    local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
+
+local X = Material.Load({
+	Title = "Weilder's HUB",
+	Style = 4,
+	SizeX = 500,
+	SizeY = 350,
+	Theme = "Dark"
+})
+local Main = X.New({
+    Title = "Booga Booga Classic"
+})
+local Sheesh = Main.Button({
+    Text = "Booga Booga Classic",
+    Callback = function(value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/YEs13421k/BOOGA-SCRIPT/main/Roblox%20Booga%20Booga%20Script"))();
+        end,
+})
+local Main = X.New({
+    Title = "Ninja Legends"
+})
+local Sheesh = Main.Button({
+    Text = "Ninja Legends OP GUI",
+    Callback = function(value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Weilder/Ninja-Legends-OP-GUI/main/Main"))();
+        end,
+})
+local Main = X.New({
+    Title = "A Hero's Destiny"
+})
+local Sheesh = Main.Button({
+    Text = "A Hero's Destiny GUI",
+    Callback = function(value)
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Solx69/Shit-Boy-Hub-Main/main/AHD'))()
+        end,
+})
+local Main = X.New({
+    Title = "Da Hood"
+})
+local Sheesh = Main.Button({
+    Text = "Da Hood Aimlock",
+    Callback = function(value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Weilder/Da-Hood-Aimlock/main/OP"))();
+    end,
+})
+local Sheesh = Main.Button({
+    Text = "Da Hood Faded (OP GUI)",
+    Callback = function(value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
+    end,
+})
+local Main = X.New({
+    Title = "Jailbreak"
+})
+local Sheesh = Main.Button({
+    Text = "Jailbreak (OP AUTOFARM)",
+    Callback = function(value)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/alohabeach/Main/master/Scripts/JailbreakAutoRob.lua"))()
+        end,
+})
+local Main = X.New({
+    Title = "Arsenal"
+})
+local Sheesh = Main.Button({
+    Text = "Owlhub",
+    Callback = function(value)
+        loadstring(game:HttpGet("https://athoi21.xyz/owlhub"))();
+        end,
+})
 end)
