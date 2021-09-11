@@ -1,69 +1,44 @@
-local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
-
-local X = Material.Load({
-	Title = "Weilder's HUB",
-	Style = 4,
-	SizeX = 500,
-	SizeY = 350,
-	Theme = "Dark"
-})
-local Main = X.New({
-    Title = "Booga Booga Classic"
-})
-local Sheesh = Main.Button({
-    Text = "Booga Booga Classic",
-    Callback = function(value)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/YEs13421k/BOOGA-SCRIPT/main/Roblox%20Booga%20Booga%20Script"))();
-        end,
-})
-local Main = X.New({
-    Title = "Ninja Legends"
-})
-local Sheesh = Main.Button({
-    Text = "Ninja Legends OP GUI",
-    Callback = function(value)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Weilder/Ninja-Legends-OP-GUI/main/Main"))();
-        end,
-})
-local Main = X.New({
-    Title = "A Hero's Destiny"
-})
-local Sheesh = Main.Button({
-    Text = "A Hero's Destiny GUI",
-    Callback = function(value)
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/Solx69/Shit-Boy-Hub-Main/main/AHD'))()
-        end,
-})
-local Main = X.New({
-    Title = "Da Hood"
-})
-local Sheesh = Main.Button({
-    Text = "Da Hood Aimlock",
-    Callback = function(value)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Weilder/Da-Hood-Aimlock/main/OP"))();
-    end,
-})
-local Sheesh = Main.Button({
-    Text = "Da Hood Faded (OP GUI)",
-    Callback = function(value)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
-    end,
-})
-local Main = X.New({
-    Title = "Jailbreak"
-})
-local Sheesh = Main.Button({
-    Text = "Jailbreak (OP AUTOFARM)",
-    Callback = function(value)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/alohabeach/Main/master/Scripts/JailbreakAutoRob.lua"))()
-        end,
-})
-local Main = X.New({
-    Title = "Arsenal"
-})
-local Sheesh = Main.Button({
-    Text = "Owlhub",
-    Callback = function(value)
-        loadstring(game:HttpGet("https://athoi21.xyz/owlhub"))();
-        end,
-})
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Weilder's Hub V2", "Ocean")
+local Tab = Window:NewTab("ScriptHub")
+local Section = Tab:NewSection("Welcome To The ScriptHub")
+Section:NewButton("Owlhub", "Owlhub Is A Arsenal GUI", function()
+    loadstring(game:HttpGet("https://athoi21.xyz/owlhub"))();
+end)
+Section:NewButton("Ninja Legends", "Pops Up A Ninja Legends GUI", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Weilder/Ninja-Legends-OP-GUI/main/Main"))();
+end)
+Section:NewButton("Booga Booga Classic", "Pops Up A Booga Booga Classic GUI", function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/YEs13421k/BOOGA-SCRIPT/main/Roblox%20Booga%20Booga%20Script"))();
+end)
+Section:NewButton("ShitBoyHub", "Pops Up A Hero's Destiny GUI", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Solx69/Shit-Boy-Hub-Main/main/AHD'))()
+end)
+Section:NewButton("Faded", "Pops Up A Da Hood GUI", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
+end)
+Section:NewButton("Aimlock", "Pops Up A Aimlock Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Weilder/Da-Hood-Aimlock/main/OP"))();
+end)
+Section:NewButton("Jailbreak", "Autofarm For Jailbreak (OP)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/alohabeach/Main/master/Scripts/JailbreakAutoRob.lua"))()
+end)
+Section:NewButton("Bee Swarm Simulator", "Autofarm For Bee Swarm Simulator (OP)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/infinitylua/Luascripts/main/KJFsdEj8sXrja.lua"))()
+end)
+local Tab = Window:NewTab("Player")
+local Section = Tab:NewSection("Player")
+Section:NewSlider("Set WalkSpeed", "Sets Your WalkSpeed", 250, 16, function(v) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
+end)
+Section:NewSlider("Set JumpPower", "Sets Your JumpPower", 250, 50, function(v) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
+end)
+local Tab = Window:NewTab("Credits")
+local Section = Tab:NewSection("Credits To TheLightIsNearBlind On Roblox")
+local Tab = Window:NewTab("Old GUI")
+local Section = Tab:NewSection("Old GUI")
+Section:NewButton("Old GUI", "Pops Up The Old GUI", function()
+    -- Made by TheLightIsNearBlind On Roblox. Enjoy!
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Weilder/Weilder-s-Hub/main/OP%20HUB"))();
+end)
