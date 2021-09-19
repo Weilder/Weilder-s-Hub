@@ -13,7 +13,7 @@ end)
 Section:NewButton("Booga Booga Classic", "Pops Up A Booga Booga Classic GUI", function()
      loadstring(game:HttpGet("https://raw.githubusercontent.com/YEs13421k/BOOGA-SCRIPT/main/Roblox%20Booga%20Booga%20Script"))();
 end)
-Section:NewButton("Clover", "Pops Up A Hero's Destiny GUI", function()
+Section:NewButton("Clover", "Pops Up A Hero's Destiny GUI key: qUz5uVnH", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/CloverMain/CloverMain/main/ScriptLoader"))()
 end)
 Section:NewButton("Faded", "Pops Up A Da Hood GUI", function()
@@ -74,7 +74,7 @@ local Main = X.New({
 local Sheesh = Main.Button({
     Text = "A Hero's Destiny GUI",
     Callback = function(value)
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/Solx69/Shit-Boy-Hub-Main/main/AHD'))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/CloverMain/CloverMain/main/ScriptLoader"))()
         end,
 })
 local Main = X.New({
